@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from 'react-bootstrap/Card';
 import { ProgramType } from "../../core/schemas/programType";
-import { Col, Container, Row } from "react-bootstrap";
+import { CardImg, Col, Container, Row } from "react-bootstrap";
 
 const ViewProgram = () => {
     const [program, setProgram] = useState<ProgramType | null>(null);
@@ -12,6 +12,7 @@ const ViewProgram = () => {
         fetch(url)
         .then((response) => response.json())
         .then((data)=> {
+            console.log(data)
             setProgram(data);
         })
     }, [])
@@ -25,17 +26,17 @@ return (
 
            <Container>
             <Row>
-       { set.exercises.map((exercise) => (
-            <Col>
-                <Card id={exercise.id} style={{ width: '18rem' }} >
-                    <Card.Body>
-                    <Card.Title>{exercise.name}</Card.Title>
-                    
-                    </Card.Body>
-                </Card>
-                </Col>
-        ))
-       }
+                { set.exercises.map((exercise) => (
+                        <Col>
+                            <Card id={exercise.id} style={{ width: '18rem' }} >
+                                <Card.Body>
+                                <Card.Title>{exercise.name}</Card.Title>
+                                <CardImg variant="top" src={`/images/${exercise.img}`}></CardImg>
+                                </Card.Body>
+                            </Card>
+                            </Col>
+                    ))
+                }
             </Row>
         </Container>
     ))

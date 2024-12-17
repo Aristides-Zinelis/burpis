@@ -10,13 +10,15 @@
           "interval": 2,
           "exercises": [
             { "id": "1",
-              "name": "bla1",
+              "name": "press militar maquina",
               "url": "www",
+              "img": "FB20_02-1024x1024.jpg",
               "weight": 50
             },
             { "id": "2",
-              "name": "bla1",
+              "name": "bla2",
               "url": "www",
+              "img": "FB20_02-1024x1024.jpg",
               "weight": 50
             }
           ]
@@ -28,14 +30,16 @@
           "weight": 50,
           "exercises": [
             { "id": "3",
-              "name": "bla2",
+              "name": "bla3",
               "url": "www",
+              "img": "FB20_02-1024x1024.jpg",
               "weight": 50
             },
             {
               "id": "4",
-              "name": "bla2",
+              "name": "bla4",
               "url": "www",
+              "img": "FB20_02-1024x1024.jpg",
               "weight": 50
             }
           ]
@@ -48,14 +52,16 @@
           "exercises": [
             {
               "id": "5",
-              "name": "bla3",
+              "name": "bla5",
               "url": "www",
+              "img": "FB20_02-1024x1024.jpg",
               "weight": 50
             },
             {
               "id": "6",
-              "name": "bla3",
+              "name": "bla6",
               "url": "www",
+              "img": "FB20_02-1024x1024.jpg",
               "weight": 50
             }
           ]
@@ -69,8 +75,9 @@
           "exercises": [
             {
               "id": "7",
-              "name": "bla4",
+              "name": "bla7",
               "url": "www",
+              "img": "FB20_02-1024x1024.jpg",
               "weight": 50
             }
           ]
