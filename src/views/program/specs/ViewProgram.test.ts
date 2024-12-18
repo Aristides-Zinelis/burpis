@@ -1,6 +1,5 @@
-// import {expect, test} from 'vitest'
-// // import {ViewProgram} from '../ViewProgram'
+import {expect, test} from 'vitest'
 
-// test('true is true'), () => {
-//     expect( true == true)
-// }
+test('true is true'), () => {
+    expect( true == true)
+}
