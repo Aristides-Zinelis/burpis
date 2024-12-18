@@ -1,3 +1,5 @@
+[![burpis](https://github.com/Aristides-Zinelis/burpis/actions/workflows/node.js.yml/badge.svg)](https://github.com/Aristides-Zinelis/burpis/actions/workflows/node.js.yml)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
