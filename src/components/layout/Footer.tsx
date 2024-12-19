@@ -1,7 +1,9 @@
+import './layout.scss'
+
 function Footer() {
     return (
         <>
-        footer
+       <div className="footer">footer</div>
         </>
     )
 }
