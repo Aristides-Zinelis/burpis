@@ -28,7 +28,7 @@ return (
             <Row>
                 { set.exercises.map((exercise) => (
                         <Col>
-                            <Card id={exercise.id} style={{ width: '18rem' }} >
+                            <Card id={exercise.id} >
                                 <Card.Body>
                                 <Card.Title>{exercise.name}</Card.Title>
                                 <CardImg variant="top" src={`/images/${exercise.img}`}></CardImg>
