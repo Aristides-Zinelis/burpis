@@ -26,3 +26,13 @@ jobs:
       - run: npm run lint
       - run: npm run test
       - run: npm run build
+
+      - name: Pre deploy
+        run: echo "Deploy..."
+ 
+      - name: Deploy app
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./dist
